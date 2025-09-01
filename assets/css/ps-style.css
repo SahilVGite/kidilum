@@ -1,0 +1,21 @@
+.secHeading{z-index: 1;}
+.secHeading > h2{font-family: var(--OptimaLT-font); font-size: var(--main-title); line-height: 1.4; text-align: center; font-weight: var(--fw-bold); text-transform: uppercase; margin-bottom: 25px;}
+.secHeading > p{font-size: var(--body); font-family: var(--Lora-font); color: var(--secondary-Txt-color); line-height: 1.4 ; text-align: center; max-width: 790px; width: 100%; margin: auto;}
+
+.secDevider {position: absolute;bottom: -325px; z-index: 1;}
+
+.heroSecTwoInfo{position: absolute; top: 0; left: 0; right: 0; max-width: 753px; width: 100%; margin: auto; z-index: 11;}
+.heroSecTwoInfo p{font-size: var(--body); font-family: var(--Lora-font); color: var(--secondary-Txt-color); line-height: 1.6; text-align: center;}
+
+.homeflavourInfo{background: linear-gradient(180deg, rgba(255, 247, 227, 0) 0.93%, #FFF7E3 8.98%);}
+.homeSpaceHeading{z-index: 2;}
+.homeSpaceHeading > p, .homeSpaceHeading > h2{position: relative; z-index: 2;}
+.homeSpaceDevider{bottom: -300px;}
+.spaceDevider{bottom: -157px;}
+
+
+.teamSlider{margin-top: 82px;}
+.teamSlideInfo{max-width: 312px; width: 100%; border-radius: 6px;}
+.teamMemberInfo{position: absolute; left: 0; bottom: 0; background: rgba(255, 255, 255, 0.9); padding: 6px 10px 6px 20px; border-radius: 0px 10px 0px 0px;}
+.teamMemberInfo > h4{font-size: var(--body-sub); font-family: var(--Inter-font); font-weight: var(--fw-bold); line-height: 26px; color: var(--primary-Txt-color); margin-bottom: 4px;}
+.teamMemberInfo > p{font-size: var(--body-sub); font-family: var(--Inter-font); line-height: 22px; color: var(--primary-Txt-color);}
