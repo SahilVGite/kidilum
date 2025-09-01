@@ -19,3 +19,5 @@
 .teamMemberInfo{position: absolute; left: 0; bottom: 0; background: rgba(255, 255, 255, 0.9); padding: 6px 10px 6px 20px; border-radius: 0px 10px 0px 0px;}
 .teamMemberInfo > h4{font-size: var(--body-sub); font-family: var(--Inter-font); font-weight: var(--fw-bold); line-height: 26px; color: var(--primary-Txt-color); margin-bottom: 4px;}
 .teamMemberInfo > p{font-size: var(--body-sub); font-family: var(--Inter-font); line-height: 22px; color: var(--primary-Txt-color);}
+.teamMemMediaBox{position: absolute; top: 16px; right: 13px;}
+.teamMemMediaBox > li{width: 32px; height: 32px; background: #fff;}
