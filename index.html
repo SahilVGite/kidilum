@@ -12,6 +12,7 @@
     <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
 
     <link rel="stylesheet" href="./assets/js/slick-slider/slick.css">
+    <link rel="stylesheet" href="./assets/js/aos/aos.css">
     <link rel="stylesheet" href="./assets/css/init.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/ps-style.css">
@@ -27,59 +28,70 @@
                     <span class="bar"></span>
                 </div>
             </div>
-            <div class="headLogo"><a href="./index.html"><img src="./assets/images/siteLogo.png" alt="KIDILUM Logo"></a></div>
-            <div class="headBtn commonBtn hollow">
-                <a href="./reservation.html">Reservation</a>
+            <div class="headLogo"><a href="./index.html">
+                <img src="./assets/images/siteLogo.png" alt="KIDILUM Logo" class="desktop">
+                <img src="./assets/images/siteLogoMobile.png" alt="KIDILUM Logo" class="mobile">
+            </a></div>
+            <div class="headBtn commonBtn hollow d-flex justContflxEnd">
+                <a href="./reservation.html" class="floatLft">Reservation</a>
             </div>
         </div>
+        <div class="mainMenu col-100 floatLft clr">
+            <nav class="col-100 floatLft clr">
+                <ul class="col-100 floatLft clr">
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                    <li><a href="./reservation.html">Reservation</a></li>
+                    <li><a href="./commingSoon.html">Coming Soon</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-overlay"></div>
     </header>
-    <main>
-        <section class="homeHeroSection col-100 floatLft clr relative">
-            <img src="./assets/images/homeHeroimg.png" alt="" class="col-100">
-            <div class="secDevider col-100 floatLft clr">
-                <img src="./assets/images/sectionShadow.png" alt="" class="col-100">
-            </div>
+    <main class="mainSec col-100 floatLft clr relative">
+        <section class="homeHeroSection backHeadCol col-100 floatLft clr relative">
+            <img src="./assets/images/homeHeroimg.png" alt="" class="col-100 desktop" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="./assets/images/homeHeroimgMobile.png" alt="" class="col-100 mobile" data-aos="zoom-in" data-aos-duration="1000">
         </section>
         <section class="homeHeroSectionTwo col-100 floatLft clr relative">
-            <img src="./assets/images/homeHero2.png" alt="">
-            <div class="heroSecTwoInfo col-100 clr relative">
-                <p>KIDILUM offers an authentic South Indian culinary journey in NYC, combining bold flavors with an elevated dining ambiance.</p>
-            </div>
-            <div class="secDevider col-100 floatLft clr">
-                <img src="./assets/images/sectionShadow.png" alt="" class="col-100">
+            <img src="./assets/images/homeHero2.png" alt="" class="desktop">
+            <img src="./assets/images/homeHero2Mobile.png" alt="" class="mobile">
+            <div class="main-wrapper">
+                <div class="heroSecTwoInfo col-100 clr relative" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <p>KIDILUM offers an authentic South Indian culinary journey in NYC, combining bold flavors with an elevated dining ambiance.</p>
+                </div>
             </div>
         </section>
         <section class="homeFlavour col-100 floatLft clr relative">
-            <div class="wrapper1440">
-                <div class="secHeading col-100 floatLft clr relative">
-                    <h2>Flavours</h2>
-                    <p>Experience vibrant dishes crafted with freshly ground spice blends, capturing the essence of South Indian cuisine.</p>
+            <div class="main-wrapper">
+                <div class="secHeading col-100 floatLft clr relative z-3">
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Flavours</h2>
+                    <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Experience vibrant dishes crafted with freshly ground spice blends, capturing the essence of South Indian cuisine.</p>
                 </div>
                 <div class="homeflavourInfo col-100 floatLft cle relative">
-                    <img src="./assets/images/hmflavours.png" alt="" class="col-100">
+                    <img src="./assets/images/hmflavours.png" alt="" class="col-100 desktop">
+                    <img src="./assets/images/hmflavoursMobile.png" alt="" class="col-100 mobile">
                 </div>
             </div>
         </section>
-        <section class="homeSpace col-100-floatLft clr relative">
-            <div class="secHeading homeSpaceHeading col-100 floatLft clr relative">
-                <h2>The Space</h2>
-                <p>An intimate and refined setting, thoughtfully designed to complement the rich flavors and culinary artistry.</p>
-                <div class="secDevider homeSpaceDevider col-100 floatLft clr">
-                    <img src="./assets/images/sectionShadow.png" alt="" class="col-100">
+        <section class="homeSpace col-100 floatLft clr relative">
+            <div class="main-wrapper">
+                <div class="secHeading homeSpaceHeading col-100 floatLft clr relative">
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">The Space</h2>
+                    <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">An intimate and refined setting, thoughtfully designed to complement the rich flavors and culinary artistry.</p>
                 </div>
             </div>
-            <img src="./assets/images/hmspace.png" alt="" class="col-100">
-            <div class="secDevider spaceDevider col-100 floatLft clr">
-                <img src="./assets/images/spaceDevider.png" alt="" class="col-100">
-            </div>
+            <img src="./assets/images/hmspace.png" alt="" class="col-100 desktop">
+            <img src="./assets/images/hmspaceMobile.png" alt="" class="col-100 mobile">
         </section>
         <section class="theTeam col-100 floatLft clr relative sv-secGap">
-            <div class="main-wrapper">
-                <div class="secHeading col-100 floatLft clr relative">
-                    <h2>Meet the Team</h2>
-                    <p>A team of passionate culinary experts, united by their commitment to delivering excellence on every plate.</p>
+            <div class="main-wrapper z-3">
+                <div class="secHeading col-100 floatLft clr relative z-3">
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Meet the Team</h2>
+                    <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">A team of passionate culinary experts, united by their commitment to delivering excellence on every plate.</p>
                 </div>
-                <div class="teamSlider col-100 floatLft clr relative">
+                <div class="teamSlider col-100 floatLft clr relative z-3" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
                     <ul class="teamSlideBox">
                         <li class="teamSlideInfo relative">
                             <img src="./assets/images/chef1.png" alt="" class="col-100">
@@ -429,13 +441,13 @@
                 </div>
             </div>
         </section>
-        <section class="theTeam col-100 floatLft clr relative sv-secGap">
-            <div class="main-wrapper">
+        <section class="gallerySec col-100 floatLft clr relative sv-secGap">
+            <div class="main-wrapper z-3">
                 <div class="secHeading galleryTitle col-100 floatLft clr relative">
-                    <h2>Gallery</h2>
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Gallery</h2>
                 </div>
             </div>
-            <div class="gallerySlider col-100 floatLft clr relative">
+            <div class="gallerySlider col-100 floatLft clr relative" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
                 <div class="galleryItem"><img src="./assets/images/gallery1.png" alt="Gallery Image 1"></div>
                 <div class="galleryItem"><img src="./assets/images/gallery2.png" alt="Gallery Image 2"></div>
                 <div class="galleryItem"><img src="./assets/images/gallery3.png" alt="Gallery Image 3"></div>
@@ -493,6 +505,7 @@
 
     <script src="./assets/js/jQuery/jquery-3.6.min.js"></script>
     <script src="./assets/js/slick-slider/slick.min.js"></script>
+    <script src="./assets/js/aos/aos.js"></script>
     <script src="./assets/js/custom.js"></script>
 </body>
 

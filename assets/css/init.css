@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 @font-face{font-family:'Optima LT';src:url('../fonts/OptimaLT.eot');src:local('../fonts/Optima LT Roman'),local('../fonts/OptimaLT'),url('../fonts/OptimaLT.eot?#iefix') format('embedded-opentype'),url('../fonts/OptimaLT.woff2') format('woff2'),url('../fonts/OptimaLT.woff') format('woff'),url('../fonts/OptimaLT.ttf') format('truetype'),url('../fonts/OptimaLT.svg#OptimaLT') format('svg');font-weight:normal;font-style:normal;font-display:swap;}
 @font-face{font-family:'Source Sans Pro';src:url('../fonts/SourceSansPro-Regular.eot');src:local('../fonts/Source Sans Pro'),local('../fonts/SourceSansPro-Regular'),url('../fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/SourceSansPro-Regular.woff2') format('woff2'),url('../fonts/SourceSansPro-Regular.woff') format('woff'),url('../fonts/SourceSansPro-Regular.ttf') format('truetype'),url('../fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');font-weight:normal;font-style:normal;font-display:swap;}
@@ -12,11 +13,10 @@
     --Black: rgba(0, 0, 0, 1);
     --Grey: #6C6C6C;
     --White: #FFFFFF;
-    --primary-gadient: linear-gradient(270.15deg, #43C4A6 25.28%, #008742 86.78%);
     --primary-color: #AB985E;
     --secondary-color: #153722;
     --Tertiary-color: #EFEFEF;
-    --Quaternary-color: #2B2B2B;
+    --Quaternary-color: #f4f3f3;
     --primary-Txt-color: #222222;
     --secondary-Txt-color: #4A4A4A;
     --Tertiary-Txt-color: #565656;
@@ -36,14 +36,14 @@
     --fw-black:900;
     --slickBtnWid: 44px;
     --slickBtnHigt: 44px;
-    --headerHeight: 133.2px;
-    }
+    --headerHeight: 0;
+}
 
 *{-webkit-tap-highlight-color:transparent;}
 html,body{scroll-behavior: smooth;}
 body{text-rendering:optimizeSpeed;line-height:1.5;font-family:var(--Lora-font);font-weight: var(--fw-regular);font-size: var(--body);}
 body,h1,h2,h3,h4,h5,h6,p,ul,ul li{margin:0;padding:0;}
-h1,h2,h3,h4,h5,h6,p,ul,ul li,span,div,a,button{font-size: inherit;color: inherit;font-weight: inherit;font-family: inherit;border: inherit;}
+h1,h2,h3,h4,h5,h6,p,ul,ul li,span,div,a,button{font-size: inherit;color: inherit;font-weight: inherit;font-family: inherit;}
 *,*::before,*::after{outline:none;box-sizing:border-box;scroll-behavior:smooth;}
 *{margin:0;padding:0;}
 input,button{-moz-appearance:none;-webkit-appearance:none;}

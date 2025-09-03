@@ -1,0 +1,85 @@
+@media (max-width:1440px){
+    :root{--main-title: 38px;--sub-title: 22px;--body: 20px;--body-sub: 18px;--sub-txt: 14px;--smallestTxt: 12px;--secGap:80px;--slickBtnWid: 40px;--slickBtnHigt: 40px;}
+    .main-wrapper,.header-wrapper,.footer-wrapper{padding-inline: 1em;}
+    .headLogo{max-width:240px;}
+    .stickyHead .headLogo{max-width: 180px;}
+    .footLogo{max-width:215px;}
+    .gallerySlider.slick-slider button.slick-prev,.gallerySlider.slick-slider button.slick-next{top:calc(100% + 40px + calc(var(--slickBtnHigt) / 2));}
+    .secHeading > h2{margin-bottom:0.2952em;}
+    .teamSlider{margin-top:2.125em;}
+    .galleryTitle{margin-bottom: 2.125em;}
+
+
+}
+@media (max-width:1280px){
+    :root{--main-title: 35px;--sub-title: 20px;--body: 19px;--body-sub: 17px;--sub-txt: 13px;--smallestTxt: 12px;--secGap:60px;--slickBtnWid: 40px;--slickBtnHigt: 40px;}
+    .gallerySlider.slick-slider button.slick-prev{left: calc(50% - var(--slickBtnWid) - 5px);}
+    .gallerySlider.slick-slider button.slick-next{right: calc(50% - var(--slickBtnWid) - 5px);}
+}
+@media (max-width:880px){
+    :root{--main-title: 30px;--sub-title: 19px;--body: 18px;--body-sub: 16px;--sub-txt: 13px;--smallestTxt: 12px;--secGap:50px;--slickBtnWid: 40px;--slickBtnHigt: 40px;}
+    .mainContent{padding-top: 30px;}
+    .plateImg{max-width: 480px; padding: 0 15px;}
+    .comeSoon h4{font-size: 30px;}
+}
+@media (max-width: 768px){
+    .footSocial > p,.footTitle{display: none;}
+    .footP{text-align: center;}
+    .footTop{flex-flow: row wrap;}
+    .footTop > *{width: 100%;}
+    .footSocial{justify-content: center;}
+    .footLogo{margin-inline:auto;}
+    .footerSec::before{top: -5.875em;}
+    .footerSec{margin-top: calc(var(--secGap) * 1.8);}
+    .contactInfoSec{flex-direction: column;}
+    .contactInfo{text-align: center;}
+    .contactDesc p{max-width: 390px;margin-inline: auto;}
+    .contactInfo > ul > li:not(:last-child)::after{left: 50%;transform: translateX(-50%);}
+    .contactContent .main-wrapper > .reservationBtn{display: flex;justify-content: center;margin-top: 4.0625em;}
+    .contactInfo > ul > li:last-child{display: none;}
+    .contactSubInfo:last-child{padding-bottom:2em;}
+    .contactInfo > ul > li{margin-bottom: 2em;}
+    .contactMap iframe{height: auto;}
+    .contactHeroSec::before{bottom:-15%;height:40%;}
+
+
+}
+@media (max-width: 610px){
+    :root{--main-title: 22px;--sub-title: 19px;--body: 16px;--body-sub: 15px;--sub-txt: 14px;--smallestTxt: 12px;--secGap:50px;--slickBtnWid: 40px;--slickBtnHigt: 40px;}
+    .desktop{display: none;}
+    .mobile{display: block;}
+    .headerSec > .header-wrapper{flex-flow: row wrap;transition: flex-flow 0s,all 0.3s;}
+    .headMenu,.headBtn{width: 50%;transition: width 0s,all 0.3s;}
+    .headLogo{order:3;margin:auto;max-width:128px;margin-top: 1em;}
+    .stickyHead .headLogo{max-width: 80px;order: 0;margin-top: 0;transition: order 0s;}
+    .stickyHead .headerSec > .header-wrapper{flex-flow: initial;}
+    .stickyHead .headMenu,.stickyHead .headBtn{width: auto;}
+    .teamSlideInfo{margin-inline:0.4em;}
+    .headerSec.stickyHead{padding-block: 0.375em;}
+    .teamSlideBox .slick-slide{width:60vw;}
+    .gallerySlider{padding-inline: 0.8em;}
+    .homeSpace::before{top:-29%;}
+    .menuItem{width: 100%;}
+    .menuItemList{row-gap: 2.5625em;}
+    .menuItemListBox{margin-top:3.5em;}
+    .backHeadCol{background-color:#ececec;}
+    .menuInfoContainer,.reservationInfoBox{margin-top:-8em;background: var(--White);}
+    .reserveThingItem::after{max-width: 156px;}
+    .secHeading h2.reservationHead{margin-bottom: 1.227em;}
+
+
+}
+
+@media (max-width:550px){
+    .inputBox{width: 70%;}
+    .inputBox input::placeholder{font-size: 16px;}
+    .submitBtn{padding: 12px;width: 100%;}
+    .inputBox{width: 100%;}
+}
+@media (max-width:380px){
+    .coomingSoon{height: 100vh;}
+    .formBox{flex-direction: column;}
+    .firmLogo{max-width: 198px; margin: 0 auto;}
+    .comeSoon{margin-top: 15px;}
+    .comeSoon h4{font-size: 20px; margin-bottom: 30px;}
+}

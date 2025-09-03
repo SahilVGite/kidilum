@@ -29,20 +29,20 @@
 .menuDevider{bottom: -180px;}
 .menuHeading > p{max-width: 916px; width: 100%;}
 .menuItemListBox{margin-top: 4.5em;}
-.menuItemList{display: flex; flex-wrap: wrap; justify-content: space-between; row-gap: 60px;}
+.menuItemList{display: flex; flex-wrap: wrap; justify-content: space-between; row-gap: 3.75em;}
 .menuItem{width: calc(50% - 2.4em); text-align: center;}
 .menuItem > h5{font-family: var(--Lora-font); font-size: var(--body-sub); font-weight: var(--fw-medium); color: var(--secondary-color); text-align: center; padding-bottom: 6.5px; margin-bottom: 8.5px; position: relative; display: flex; justify-content: center; column-gap: 20px;}
 .menuItem > h5::after{content: ""; max-width: 156px; width: 100%; margin: auto; position: absolute; left: 0; right: 0; bottom: 0; border-bottom: 1px solid var(--primary-color);}
 .menuItem > p{font-family: var(--Lora-font); color: var(--Tertiary-Txt-color); font-size: var(--sub-txt); text-align: center;}
 
 
-.reservationInfoBox{padding:100px 0 100px;}
+.reservationInfoBox{padding-top: var(--secGap);}
 .reservDevider{bottom: -165px;}
 .reserveHeading{margin-bottom: 3em;}
 .reserveHeading > p{max-width: 1010px; width: 100%; padding-bottom: 20px;}
 .reserveBookBtn{margin-top: 3em;}
-.reserveThingItem{padding-bottom: 2em; margin-bottom: 1.5em;}
-.reserveThingItem::after{content: ""; max-width: 386px; width: 100%; margin: auto; position: absolute; left: 0; right: 0; bottom: 0; border-bottom: 1px solid var(--primary-color);}
+.reserveThingItem:not(:last-child){padding-bottom: 2em; margin-bottom: 1.5em;}
+.reserveThingItem::after{content: ""; max-width: 386px; width: 100%; margin: auto; position: absolute; left: 0; right: 0; bottom: 0; border-bottom: 1px solid var(--primary-color);opacity: 0.4;}
 .reserveThingItem:last-child:after{content: ""; max-width: 386px; width: 100%; margin: auto; position: absolute; left: 0; right: 0; bottom: 0; border-bottom: 1px solid var(--primary-color); opacity: 0;}
 .reserveThingItem > h5{text-align: center; margin-bottom: 8px; font-family: var(--OptimaLT-font); font-size: calc(var(--sub-title) - 1px); color: var(--secondary-color); font-weight: var(--fw-bold);}
 .reserveThingItem > p{text-align: center; font-family: var(--Lora-font); font-size: var(--body-sub); font-weight: var(--fw-medium); line-height: 31px; color: rgba(86, 86, 86, 0.7);}

@@ -12,6 +12,7 @@
     <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
 
     <link rel="stylesheet" href="./assets/js/slick-slider/slick.css">
+    <link rel="stylesheet" href="./assets/js/aos/aos.css">
     <link rel="stylesheet" href="./assets/css/init.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/ps-style.css">
@@ -27,60 +28,66 @@
                     <span class="bar"></span>
                 </div>
             </div>
-            <div class="headLogo"><a href="./index.html"><img src="./assets/images/siteLogo.png" alt="KIDILUM Logo"></a></div>
-            <div class="headBtn commonBtn hollow">
-                <a href="./reservation.html">Reservation</a>
+            <div class="headLogo"><a href="./index.html">
+                <img src="./assets/images/siteLogo.png" alt="KIDILUM Logo" class="desktop">
+                <img src="./assets/images/siteLogoMobile.png" alt="KIDILUM Logo" class="mobile">
+            </a></div>
+            <div class="headBtn commonBtn hollow d-flex justContflxEnd">
+                <a href="./reservation.html" class="floatLft">Reservation</a>
             </div>
         </div>
+        <div class="mainMenu col-100 floatLft clr">
+            <nav class="col-100 floatLft clr">
+                <ul class="col-100 floatLft clr">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                    <li><a href="./reservation.html" class="active">Reservation</a></li>
+                    <li><a href="./commingSoon.html">Coming Soon</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-overlay"></div>
     </header>
     <main class="mainSec col-100 floatLft clr relative">
-        <section class="homeHeroSection col-100 floatLft clr relative backHeadCol">
-            <img src="./assets/images/reservationHeroBann.png" alt="" class="col-100">
-            <div class="secDevider reservDevider col-100 floatLft clr">
-                <img src="./assets/images/menuDevider.png" alt="" class="col-100">
-            </div>
+        <section class="homeHeroSection col-100 floatLft clr relative">
+            <img src="./assets/images/reservationHeroBann.png" alt="" class="col-100 desktop">
+            <img src="./assets/images/reservationHeroBannMobile.png" alt="" class="col-100 mobile">
         </section>
-
-        <section class="reservationInfoBox col-100 flotLft clr relative">
+        <section class="reservationInfoBox col-100 floatLft clr relative">
             <div class="main-wrapper">
-                <div class="reservInfoBoxContent col-100 floatLft clr relative">
+                <div class="reservInfoBoxContent col-100 floatLft clr relative z-3">
                     <div class="secHeading reserveHeading col-100 floatLft clr relative">
-                        <h2>Menu</h2>
-                        <p>Book your table to embark on a refined South Indian dining experience at the heart of New York City.</p>
-                        <p>For table sizes that require bigger than 8 pax please contact the restaurant directly:</p>
-                        <p><a href="javascipt:;">Email:reservations@kidilum.com</a></p>
-
-                        <div class="reserveBookBtn textCenter col-100 floatLft clr relative">
+                        <h2 class="reservationHead" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">RESERVATION</h2>
+                        <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">Book your table to embark on a refined South Indian dining experience at the heart of New York City.</p>
+                        <p data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">For table sizes that require bigger than 8 pax please contact the restaurant directly:</p>
+                        <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" data-aos-anchor-placement="center-bottom"><a href="javascipt:;">Email:reservations@kidilum.com</a></p>
+                        <div class="reserveBookBtn textCenter col-100 floatLft clr relative" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
                             <div class="commonBtn">
                                 <a href="javascript:;">Book Your Experience Now</a>
                             </div>
                         </div>
                     </div>
-
                     <div class="reserveThingsBox col-100 floatLft clr relative">
                         <ul class="reserveThingsInfo col-100 clr relative">
-                            <li class="reserveThingItem col-100 clr relative">
+                            <li class="reserveThingItem col-100 clr relative" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
                                 <h5>Important Notice</h5>
                                 <p>Tables for the upcoming month will open for reservation on the 1st of each month at 10am local time.</p>
                             </li>
-
-                            <li class="reserveThingItem col-100 clr relative">
+                            <li class="reserveThingItem col-100 clr relative" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
                                 <h5>Dress Code</h5>
                                 <p>Smart Elegant<br>(Long Trousers Only)</p>
                             </li>
-
-                            <li class="reserveThingItem col-100 clr relative">
+                            <li class="reserveThingItem col-100 clr relative" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
                                 <h5>Dietary Requirements</h5>
                                 <p>For any allergies or dietary requirement, please notify us 72 hours in advance.</p>
                                 <p>We are unable to accommodate a menu free from dairy, eggs, and citrus.</p>
                             </li>
-
-                            <li class="reserveThingItem col-100 clr relative">
+                            <li class="reserveThingItem col-100 clr relative" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
                                 <h5>Cancellation Policy:</h5>
                                 <p>Cancellations made within 72 hours of the reservation will be charged the prepayment fee of 50%.</p>
                             </li>
-
-                            <li class="reserveThingItem col-100 clr relative">
+                            <li class="reserveThingItem col-100 clr relative" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
                                 <h5>Age Policy</h5>
                                 <p>13 & Above</p>
                             </li>
@@ -136,6 +143,7 @@
 
     <script src="./assets/js/jQuery/jquery-3.6.min.js"></script>
     <script src="./assets/js/slick-slider/slick.min.js"></script>
+    <script src="./assets/js/aos/aos.js"></script>
     <script src="./assets/js/custom.js"></script>
 </body>
 

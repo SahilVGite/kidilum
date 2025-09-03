@@ -1,7 +1,35 @@
 $(document).ready(function () {
 
-  $('.menu-btn, .nav__link').on('click', function () {
-    $('.menu-btn, .nav').toggleClass('active');
+  // AOS Initialize
+  AOS.init({
+    once: true,
+    mirror: false,
+    offset: 50,
+    duration: 800,
+    easing: 'ease-in-out',
+  });
+
+  function setHeaderHeight() {
+    var headerHeight = $('header').outerHeight(); // get header height including padding
+    $(':root').css('--headerHeight', headerHeight + 'px');
+  }
+
+  // Run on page load
+  $(document).ready(function () {
+    setHeaderHeight();
+  });
+
+  // Run on window resize
+  $(window).on('resize', function () {
+    setHeaderHeight();
+  });
+
+  // Mobile Menu Toggle
+  $('.menu-btn, .mainMenu > nav > ul > li > a').on('click', function () {
+    $('.menu-btn, .nav, .mainMenu,.headMenu,.menu-overlay').toggleClass('active');
+  });
+  $('.menu-overlay').on('click', function () {
+    $('.menu-btn, .nav, .mainMenu,.headMenu,.menu-overlay').removeClass('active');
   });
 
   // Slick Slider
@@ -19,20 +47,20 @@ $(document).ready(function () {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          infinite: true,
-          dots: true
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           slidesToShow: 2,
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 610,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
+          variableWidth: true,   // allow custom width per slide
+          centerMode: false      // prevent centering
         }
       }
     ]
@@ -47,13 +75,12 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          infinite: true,
-          dots: true
         }
       },
       {
@@ -74,23 +101,6 @@ $(document).ready(function () {
   // Sticky Header
   $(window).on("scroll", function () {
     $(".headerSec").toggleClass("stickyHead", $(this).scrollTop() > 0);
-  });
-
-  // Hamburger menu toggle
-  $('.hambergerMenu').on('click', function () {
-    $('.headNav > nav').toggleClass('active');
-    $('body').toggleClass('menu-open');
-
-    if (!$('.menu-overlay').length) {
-      $('header').append('<div class="menu-overlay"></div>');
-    }
-  });
-
-  // Close menu
-  $(document).on('click', '.HamClose, .menu-overlay', function () {
-    $('.headNav > nav').removeClass('active');
-    $('body').removeClass('menu-open');
-    $('.menu-overlay').remove();
   });
 
 });
