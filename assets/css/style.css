@@ -32,7 +32,7 @@
 .commonBtn a{font-size: var(--body);padding: 0.5em 1.5em;border: 1px solid transparent;border-radius: 9px;cursor: pointer;background-color: var(--primary-color);color: var(--White);font-family: var(--OptimaLT-font);font-weight: var(--fw-bold); transition: background-color 0.3s ease;text-align: center;}
 .commonBtn:hover a{background-color: transparent;border-color: var(--primary-color);color: var(--primary-color);}
 .commonBtn.hollow a{background-color: transparent;border-color: var(--primary-color);color: var(--primary-color);}
-.commonBtn.hollow:hover a{background-color: var(--primary-color);border-color: transparent;color: var(--White);}
+.commonBtn.hollow a:hover{background-color: var(--primary-color);border-color: transparent;color: var(--White);}
 
 /* Footer */
 .footerSec{background-color: #153722;padding: 1em 0;color: #ADB39E;margin-top: var(--secGap);}
