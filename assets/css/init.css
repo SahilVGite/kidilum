@@ -13,6 +13,7 @@
     --Black: rgba(0, 0, 0, 1);
     --Grey: #6C6C6C;
     --White: #FFFFFF;
+    --primary-bg-color: #E6FFF5;
     --primary-color: #AB985E;
     --secondary-color: #153722;
     --Tertiary-color: #EFEFEF;
@@ -41,7 +42,7 @@
 
 *{-webkit-tap-highlight-color:transparent;}
 html,body{scroll-behavior: smooth;}
-body{text-rendering:optimizeSpeed;line-height:1.5;font-family:var(--Lora-font);font-weight: var(--fw-regular);font-size: var(--body);overflow-x: hidden;}
+body{text-rendering:optimizeSpeed;line-height:1.5;font-family:var(--Lora-font);font-weight: var(--fw-regular);font-size: var(--body);overflow-x: hidden;background-color: var(--primary-bg-color);}
 body,h1,h2,h3,h4,h5,h6,p,ul,ul li{margin:0;padding:0;}
 h1,h2,h3,h4,h5,h6,p,ul,ul li,span,div,a,button{font-size: inherit;color: inherit;font-weight: inherit;font-family: inherit;}
 *,*::before,*::after{outline:none;box-sizing:border-box;scroll-behavior:smooth;}

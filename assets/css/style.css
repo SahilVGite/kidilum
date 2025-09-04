@@ -27,6 +27,7 @@
 
 .mainSec > section:first-child{padding-top: var(--headerHeight);}
 .backHeadCol{background-color:var(--Quaternary-color);}
+.backHeadNwCol{background-color: var(--White);}
 
 /* Common Button */
 .commonBtn a{font-size: var(--body);padding: 0.5em 1.5em;border: 1px solid transparent;border-radius: 9px;cursor: pointer;background-color: var(--primary-color);color: var(--White);font-family: var(--OptimaLT-font);font-weight: var(--fw-bold); transition: background-color 0.3s ease;text-align: center;}
@@ -64,10 +65,16 @@
 /* Home */
 .header-wrapper > *{width:calc(33.333% - 1em);}
 .gallerySec{margin-bottom: calc(var(--secGap) / 3);}
+.galleryItem{overflow: hidden;}
+.galleryItem > img{transition: all 0.5s;}
+.galleryItem:hover > img{transform: scale(1.1);}
 .gallerySlider .galleryItem img{aspect-ratio: 0.79/1;}
 .galleryTitle{margin-bottom: 2em;}
 .galleryTitle.secHeading > h2{margin-bottom: 0;}
-.homeHeroSectionTwo::before,.homeFlavour::before,.theTeam::before,.homeSpace::before,.menuInfoContainer::before,.reservationInfoBox::before{content: " ";position: absolute;top: -50%;left: 0;z-index: 2; width: 100%;height: 100%;background-image: url(../images/sectionShadow.png);background-position: center;background-repeat: no-repeat;background-size: contain;}
+.homeHeroSectionTwo::before,.homeFlavour::before,.theTeam::before,.homeSpace::before{content: " ";position: absolute;top: -50%;left: 0;z-index: 2; width: 100%;height: 100%;background-image: url(../images/sectionShadow.png);background-position: center;background-repeat: no-repeat;background-size: contain;}
+.heroSecTwoInfo{background-color: var(--primary-bg-color);}
+.heroSecTwoInfo::after{content: " ";position: absolute;bottom: -50%;left: 0;width: 100%;height: 100%;background-image: url(../images/sectionShadow.png);background-position: center;background-repeat: no-repeat;background-size: 100% 100%;}
+.menuInfoContainer::before,.reservationInfoBox::before,.contactContent::before{content: " ";position: absolute;top: -50%;left: 0;z-index: 2; width: 100%;height: 100%;background-image: url(../images/sectionShadowWhite.png);background-position: center;background-repeat: no-repeat;background-size: contain;}
 .homeSpace > img{margin-top: 2em;float: left;}
 
 /* Contact */

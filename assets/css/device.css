@@ -61,12 +61,12 @@
     .headerSec.stickyHead{padding-block: 0.375em;}
     .teamSlideBox .slick-slide{width:60vw;}
     .gallerySlider{padding-inline: 0.8em;}
-    .homeSpace::before{top:-29%;}
+    .homeSpace::before{top: -31.5%;}
     .menuItem{width: 100%;}
     .menuItemList{row-gap: 2.5625em;}
     .menuItemListBox{margin-top:3.5em;}
     .backHeadCol{background-color:#f0f0f0;}
-    .menuInfoContainer,.reservationInfoBox{margin-top:-8em;background: var(--White);}
+    .menuInfoContainer,.reservationInfoBox{margin-top:-8em;background: var(--primary-bg-color);}
     .reserveThingItem::after{max-width: 156px;}
     .secHeading h2.reservationHead{margin-bottom: 1.227em;}
     .mainMenu{max-width:250px;}
@@ -88,4 +88,5 @@
     .firmLogo{max-width: 198px; margin: 0 auto;}
     .comeSoon{margin-top: 15px;}
     .comeSoon h4{font-size: 20px; margin-bottom: 30px;}
+    .stickyHead .headMenu,.stickyHead .headBtn{width: auto;}
 }
