@@ -13,8 +13,7 @@
 .homeSpaceDevider{bottom: -300px;}
 .spaceDevider{bottom: -157px;}
 
-
-.teamSlider{margin-top: 5.125em;}
+.teamSlider{margin-top: 2em;}
 .teamSlideInfo{width: 100%; border-radius: 6px;margin-inline: 0.75em;}
 .teamSlideInfo:hover .teamMemMediaBox{opacity: 1;right: 0.8125em;}
 .teamMemberInfo{position: absolute; left: 0; bottom: 0; background: rgba(255, 255, 255, 0.9); padding: 6px 10px 6px 20px; border-radius: 0px 10px 0px 0px;}
@@ -25,7 +24,6 @@
 .teamMemMediaBox > li > a:hover svg path:first-child{fill: var(--primary-color); transition: all 0.3s ease;}
 .teamMemMediaBox > li > a:hover svg path:last-child{fill: var(--White); transition: all 0.3s ease;}
 
-
 .menuDevider{bottom: -180px;}
 .menuHeading > p{max-width: 916px; width: 100%;}
 .menuItemListBox{margin-top: 4.5em;}
@@ -34,7 +32,6 @@
 .menuItem > h5{font-family: var(--Lora-font); font-size: var(--body-sub); font-weight: var(--fw-medium); color: var(--secondary-color); text-align: center; padding-bottom: 6.5px; margin-bottom: 8.5px; position: relative; display: flex; justify-content: center; column-gap: 20px;}
 .menuItem > h5::after{content: ""; max-width: 156px; width: 100%; margin: auto; position: absolute; left: 0; right: 0; bottom: 0; border-bottom: 1px solid var(--primary-color);}
 .menuItem > p{font-family: var(--Lora-font); color: var(--Tertiary-Txt-color); font-size: var(--sub-txt); text-align: center;}
-
 
 .reservationInfoBox{padding-top: var(--secGap);}
 .reservDevider{bottom: -165px;}

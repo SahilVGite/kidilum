@@ -16,6 +16,9 @@
     .gallerySlider.slick-slider button.slick-prev{left: calc(50% - var(--slickBtnWid) - 5px);}
     .gallerySlider.slick-slider button.slick-next{right: calc(50% - var(--slickBtnWid) - 5px);}
 }
+@media (max-width: 1024px){
+    .teamSlideInfo .teamMemMediaBox{opacity:1;right:0.8125em;}
+}
 @media (max-width:880px){
     :root{--main-title: 30px;--sub-title: 19px;--body: 18px;--body-sub: 16px;--sub-txt: 13px;--smallestTxt: 12px;--secGap:50px;--slickBtnWid: 40px;--slickBtnHigt: 40px;}
     .mainContent{padding-top: 30px;}
@@ -53,7 +56,7 @@
     .headLogo{order:3;margin:auto;max-width:128px;margin-top: 1em;}
     .stickyHead .headLogo{max-width: 80px;order: 0;margin-top: 0;transition: order 0s;}
     .stickyHead .headerSec > .header-wrapper{flex-flow: initial;}
-    .stickyHead .headMenu,.stickyHead .headBtn{width: auto;}
+    .stickyHead .headMenu,.stickyHead .headBtn{width: 33.333%;}
     .teamSlideInfo{margin-inline:0.4em;}
     .headerSec.stickyHead{padding-block: 0.375em;}
     .teamSlideBox .slick-slide{width:60vw;}
@@ -62,11 +65,14 @@
     .menuItem{width: 100%;}
     .menuItemList{row-gap: 2.5625em;}
     .menuItemListBox{margin-top:3.5em;}
-    .backHeadCol{background-color:#ececec;}
+    .backHeadCol{background-color:#f0f0f0;}
     .menuInfoContainer,.reservationInfoBox{margin-top:-8em;background: var(--White);}
     .reserveThingItem::after{max-width: 156px;}
     .secHeading h2.reservationHead{margin-bottom: 1.227em;}
-
+    .mainMenu{max-width:250px;}
+    .heroSecTwoInfo{padding-inline: 10px;}
+    .commonBtn a{padding:0.5em 1.5em;}
+    .mainContent{min-height: 94vh;}
 
 }
 

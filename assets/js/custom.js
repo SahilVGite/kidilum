@@ -10,14 +10,12 @@ $(document).ready(function () {
   });
 
   function setHeaderHeight() {
-    var headerHeight = $('header').outerHeight(); // get header height including padding
+    let headerHeight = $('header').outerHeight(); // get header height including padding
     $(':root').css('--headerHeight', headerHeight + 'px');
   }
 
   // Run on page load
-  $(document).ready(function () {
-    setHeaderHeight();
-  });
+  setHeaderHeight();
 
   // Run on window resize
   $(window).on('resize', function () {
@@ -27,9 +25,11 @@ $(document).ready(function () {
   // Mobile Menu Toggle
   $('.menu-btn, .mainMenu > nav > ul > li > a').on('click', function () {
     $('.menu-btn, .nav, .mainMenu,.headMenu,.menu-overlay').toggleClass('active');
+    $('body').toggleClass('no-scroll');
   });
   $('.menu-overlay').on('click', function () {
     $('.menu-btn, .nav, .mainMenu,.headMenu,.menu-overlay').removeClass('active');
+    $('body').removeClass('no-scroll');
   });
 
   // Slick Slider
